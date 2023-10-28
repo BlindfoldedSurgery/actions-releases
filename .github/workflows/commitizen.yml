@@ -67,6 +67,7 @@ jobs:
         if: steps.bump.outputs.bumped == 'true' && inputs.publish-major-tag
         env:
           MAJOR_VERSION: ${{ steps.bump.outputs.major-version }}
+          VERSION: ${{ steps.bump.outputs.version }}
         run: |
           if [ -z "$MAJOR_VERSION" ]
           then
