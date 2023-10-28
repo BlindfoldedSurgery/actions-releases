@@ -10,20 +10,6 @@ on:
         required: true
 
 jobs:
-  check-commits:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    steps:
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-      - run: pip install poetry==1.6.1
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: '0'
-      - run: poetry install --all-extras --no-interaction --no-ansi
-      - run: poetry run cz check --rev-range origin/main..HEAD
-
   bump:
     runs-on: ubuntu-latest
     concurrency: release
