@@ -1,3 +1,9 @@
+## v1.0.2 (2023-10-28)
+
+### Fix
+
+- Perform PR creation and automerge with different tokens
+
 ## v1.0.1 (2023-10-28)
 
 ### Fix
