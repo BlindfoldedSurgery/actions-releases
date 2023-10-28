@@ -31,3 +31,15 @@ Checks whether commit messages in a PR abide by the [conventional commit][ccommi
 
 Automatically calls cz bump for changes on the default branch and creates an (auto-merged) PR
 with the bump.
+
+**Inputs:**
+
+| Name              | Required | Default |    Example     | Description                                 |
+|:------------------|:--------:|:-------:|:--------------:|---------------------------------------------|
+| publish-major-tag |    no    | `false` | `true`/`false` | Whether to publish a major tag (e.g. `v1`). |
+
+**Secrets:**
+
+| Name       | Required | Description                                         |
+|:-----------|:--------:|-----------------------------------------------------|
+| `GH_TOKEN` |   yes    | A GitHub personal access token that can create PRs. |
