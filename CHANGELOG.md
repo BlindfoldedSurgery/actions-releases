@@ -1,3 +1,13 @@
+## v2.0.0 (2023-10-28)
+
+### BREAKING CHANGE
+
+- You'll need to split up you calling job into check and bump jobs
+
+### Feat
+
+- Split up commitizen workflow
+
 ## v1.1.2 (2023-10-28)
 
 ### Fix
