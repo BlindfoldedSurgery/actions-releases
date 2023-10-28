@@ -1,7 +1,7 @@
-# actions-actions
+# actions-releases
 
-This repository contains a set of reusable workflows geared towards supporting the maintenance of
-such reusable workflows.
+This repository contains a set of reusable workflows geared towards supporting the release process
+of a versioned project.
 
 The project follows semantic versioning. You can depend on tags for specific versions of use a
 major version tag (e.g. `v1`).
@@ -20,7 +20,7 @@ accidentally create commits with an unconventional message, install a pre-commit
 ```yaml
 jobs:
   commitizen:
-    uses: BlindfoldedSurgery/actions-actions/.github/workflows/commitizen.yml@v1
+    uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen.yml@v1
 ```
 
 ## Available Workflows
