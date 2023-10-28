@@ -4,8 +4,11 @@ on:
   pull_request: { }
 
 jobs:
-  commitizen:
-    uses: ./.github/workflows/commitizen.yml
+  commitizen-check:
+    uses: ./.github/workflows/commitizen-check.yml
+
+  commitizen-bump:
+    uses: ./.github/workflows/commitizen-bump.yml
     with:
       publish-major-tag: true
     secrets:

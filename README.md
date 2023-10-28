@@ -25,12 +25,13 @@ jobs:
 
 ## Available Workflows
 
-### commitizen
+### commitizen-check
 
 Checks whether commit messages in a PR abide by the [conventional commit][ccommit] rules.
 
-Automatically calls cz bump for changes on the default branch and creates an (auto-merged) PR
-with the bump.
+### commitizen-bump
+
+Invokes cz bump for changes on the default branch and creates an (auto-merged) PR with the bump.
 
 **Inputs:**
 
