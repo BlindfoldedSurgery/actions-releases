@@ -6,5 +6,7 @@ on:
 jobs:
   commitizen:
     uses: ./.github/workflows/commitizen.yml
+    with:
+      publish-major-tag: true
     secrets:
       GH_TOKEN: ${{ secrets.GH_PR_TOKEN }}
