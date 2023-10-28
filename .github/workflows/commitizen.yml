@@ -1,5 +1,10 @@
 on:
   workflow_call:
+    inputs:
+      publish-major-tag:
+        type: boolean
+        required: false
+        default: false
     secrets:
       GH_TOKEN:
         required: true
@@ -54,7 +59,16 @@ jobs:
           
           version=$(poetry version --short)
           echo "version=$version" >> $GITHUB_OUTPUT
-      - name: Create PR and tags
+          major_version=$(echo $VERSION | cut -d. -f1 -)
+          echo "major_version=$major_version" >> $GITHUB_OUTPUT
+      - name: Create and push major tag
+        if: inputs.publish-major-tag
+        env:
+          MAJOR_VERSION: ${{ steps.bump.outputs.major_version }}
+        run: |
+          git tag --force "v$MAJOR_VERSION"
+          git push --force origin "v$MAJOR_VERSION"
+      - name: Create PR and exact tag
         id: pr-create
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
