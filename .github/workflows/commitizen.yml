@@ -62,12 +62,17 @@ jobs:
           version=$(poetry version --short)
           echo "version=$version" >> $GITHUB_OUTPUT
           major_version=$(echo $VERSION | cut -d. -f1 -)
-          echo "major_version=$major_version" >> $GITHUB_OUTPUT
+          echo "major-version=$major_version" >> $GITHUB_OUTPUT
       - name: Create and push major tag
         if: steps.bump.outputs.bumped == 'true' && inputs.publish-major-tag
         env:
-          MAJOR_VERSION: ${{ steps.bump.outputs.major_version }}
+          MAJOR_VERSION: ${{ steps.bump.outputs.major-version }}
         run: |
+          if [ -z "$MAJOR_VERSION" ]
+          then
+            echo "No MAJOR_VERSION set." >&2
+            exit 1
+          fi
           git tag --force "v$MAJOR_VERSION"
           git push --force origin "v$MAJOR_VERSION"
       - name: Create PR and exact tag
