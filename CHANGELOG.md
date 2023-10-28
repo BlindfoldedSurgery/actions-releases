@@ -1,3 +1,9 @@
+## v1.1.0 (2023-10-28)
+
+### Feat
+
+- Allow publishing major tags
+
 ## v1.0.2 (2023-10-28)
 
 ### Fix
