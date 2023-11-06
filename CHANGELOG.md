@@ -1,3 +1,9 @@
+## v2.2.1 (2023-11-06)
+
+### Fix
+
+- Actually expose version outputs
+
 ## v2.2.0 (2023-11-06)
 
 ### Feat
