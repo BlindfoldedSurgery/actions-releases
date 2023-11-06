@@ -1,3 +1,9 @@
+## v2.2.0 (2023-11-06)
+
+### Feat
+
+- Expose bumped and version output for bump job
+
 ## v2.1.0 (2023-11-06)
 
 ### Feat
