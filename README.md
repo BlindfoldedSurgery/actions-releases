@@ -44,3 +44,7 @@ Invokes cz bump for changes on the default branch and creates an (auto-merged) P
 | Name       | Required | Description                                         |
 |:-----------|:--------:|-----------------------------------------------------|
 | `GH_TOKEN` |   yes    | A GitHub personal access token that can create PRs. |
+
+### commitizen-version
+
+Provides the current project version as a `version` output.
