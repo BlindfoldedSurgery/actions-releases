@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: release
     if: success() && github.ref_name == github.event.repository.default_branch
+    outputs:
+      bumped: ${{ steps.bump.outputs.bumped }}
+      version: ${{ steps.bump.outputs.version }}
     steps:
       - uses: actions/setup-python@v4
         with:
