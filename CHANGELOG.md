@@ -1,3 +1,9 @@
+## v2.1.0 (2023-11-06)
+
+### Feat
+
+- Add commitizen-version workflow
+
 ## v2.0.0 (2023-10-28)
 
 ### BREAKING CHANGE
