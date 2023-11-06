@@ -8,6 +8,11 @@ on:
     secrets:
       GH_TOKEN:
         required: true
+    outputs:
+      bumped:
+        value: ${{ jobs.bump.outputs.bumped }}
+      version:
+        value: ${{ jobs.bump.outputs.version }}
 
 jobs:
   bump:
