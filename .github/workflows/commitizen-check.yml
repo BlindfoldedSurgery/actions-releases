@@ -1,5 +1,9 @@
 on:
-  workflow_call: {}
+  workflow_call:
+    inputs:
+      python-version:
+        type: string
+        default: '3.11'
 
 jobs:
   check:
@@ -8,7 +12,7 @@ jobs:
     steps:
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ inputs.python-version }}
       - run: pip install poetry==1.7.1
       - uses: actions/checkout@v4
         with:

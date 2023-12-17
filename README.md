@@ -21,6 +21,8 @@ accidentally create commits with an unconventional message, install a pre-commit
 jobs:
   commitizen:
     uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen.yml@v1
+    with:
+      python-version: '3.12'
 ```
 
 ## Available Workflows
@@ -29,15 +31,22 @@ jobs:
 
 Checks whether commit messages in a PR abide by the [conventional commit][ccommit] rules.
 
+**Inputs:**
+
+| Name           | Required | Default |     Example      | Description                                      |
+|:---------------|:--------:|:-------:|:----------------:|--------------------------------------------------|
+| python-version |    no    | `3.11`  | `3.12`, `3.12.1` | The Python version with which to run commitizen. |
+
 ### commitizen-bump
 
 Invokes cz bump for changes on the default branch and creates an (auto-merged) PR with the bump.
 
 **Inputs:**
 
-| Name              | Required | Default |    Example     | Description                                 |
-|:------------------|:--------:|:-------:|:--------------:|---------------------------------------------|
-| publish-major-tag |    no    | `false` | `true`/`false` | Whether to publish a major tag (e.g. `v1`). |
+| Name              | Required | Default |     Example      | Description                                      |
+|:------------------|:--------:|:-------:|:----------------:|--------------------------------------------------|
+| publish-major-tag |    no    | `false` |  `true`/`false`  | Whether to publish a major tag (e.g. `v1`).      |
+| python-version    |    no    | `3.11`  | `3.12`, `3.12.1` | The Python version with which to run commitizen. |
 
 **Secrets:**
 
@@ -48,3 +57,9 @@ Invokes cz bump for changes on the default branch and creates an (auto-merged) P
 ### commitizen-version
 
 Provides the current project version as a `version` output.
+
+**Inputs:**
+
+| Name           | Required | Default |     Example      | Description                                      |
+|:---------------|:--------:|:-------:|:----------------:|--------------------------------------------------|
+| python-version |    no    | `3.11`  | `3.12`, `3.12.1` | The Python version with which to run commitizen. |
