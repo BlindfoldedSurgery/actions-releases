@@ -6,10 +6,13 @@ on:
 jobs:
   commitizen-check:
     uses: ./.github/workflows/commitizen-check.yml
+    with:
+      python-version: '3.11'
 
   commitizen-bump:
     uses: ./.github/workflows/commitizen-bump.yml
     with:
       publish-major-tag: true
+      python-version: '3.11'
     secrets:
       GH_TOKEN: ${{ secrets.GH_PR_TOKEN }}
