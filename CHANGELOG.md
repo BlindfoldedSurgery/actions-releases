@@ -1,3 +1,9 @@
+## v2.3.1 (2023-12-17)
+
+### Fix
+
+- Use GH_TOKEN to checkout during bump
+
 ## v2.3.0 (2023-12-17)
 
 ### Feat
