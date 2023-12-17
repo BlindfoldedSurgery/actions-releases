@@ -1,3 +1,9 @@
+## v2.3.0 (2023-12-17)
+
+### Feat
+
+- Allow configuration of python-version
+
 ## v2.2.1 (2023-11-06)
 
 ### Fix
