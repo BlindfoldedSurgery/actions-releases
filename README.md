@@ -50,9 +50,9 @@ Invokes cz bump for changes on the default branch and creates an (auto-merged) P
 
 **Secrets:**
 
-| Name       | Required | Description                                         |
-|:-----------|:--------:|-----------------------------------------------------|
-| `GH_TOKEN` |   yes    | A GitHub personal access token that can create PRs. |
+| Name       | Required | Description                                                                      |
+|:-----------|:--------:|----------------------------------------------------------------------------------|
+| `GH_TOKEN` |   yes    | A GitHub personal access token that can create PRs and read/write repo contents. |
 
 ### commitizen-version
 
