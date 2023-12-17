@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "actions-releases"
 description = "GitHub Actions Workflows for Releases"
-version = "2.3.0"
+version = "2.3.1"
 authors = ["BlindfoldedSurgery <team@blindfolded.surgery>"]
 license = "MIT"
 readme = "README.md"
