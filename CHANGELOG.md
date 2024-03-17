@@ -1,3 +1,9 @@
+## v2.3.2 (2024-03-17)
+
+### Fix
+
+- Classify Poetry updates as feat/fix
+
 ## v2.3.1 (2023-12-17)
 
 ### Fix
