@@ -1,3 +1,9 @@
+## v2.3.3 (2024-05-08)
+
+### Fix
+
+- **deps**: update dependency poetry to v1.8.3
+
 ## v2.3.2 (2024-03-17)
 
 ### Fix
