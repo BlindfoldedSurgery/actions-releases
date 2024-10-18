@@ -7,12 +7,12 @@ jobs:
   commitizen-check:
     uses: ./.github/workflows/commitizen-check.yml
     with:
-      python-version: '3.12'
+      python-version: '3.13'
 
   commitizen-bump:
     uses: ./.github/workflows/commitizen-bump.yml
     with:
       publish-major-tag: true
-      python-version: '3.12'
+      python-version: '3.13'
     secrets:
       GH_TOKEN: ${{ secrets.GH_PR_TOKEN }}
