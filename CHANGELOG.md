@@ -1,3 +1,9 @@
+## v2.4.0 (2024-12-03)
+
+### Feat
+
+- Update runner version to 24.04
+
 ## v2.3.5 (2024-10-14)
 
 ### Fix
