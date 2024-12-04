@@ -1,3 +1,9 @@
+## v2.5.1 (2024-12-04)
+
+### Fix
+
+- Fix typos in workflow files
+
 ## v2.5.0 (2024-12-04)
 
 ### Feat
