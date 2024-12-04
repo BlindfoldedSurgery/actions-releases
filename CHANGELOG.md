@@ -1,3 +1,14 @@
+## v2.5.0 (2024-12-04)
+
+### Feat
+
+- Support uv as build tool
+
+### Fix
+
+- Correctly extract version during bump (2)
+- Correctly extract version during bump
+
 ## v2.4.0 (2024-12-03)
 
 ### Feat
