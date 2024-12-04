@@ -58,19 +58,19 @@ jobs:
 
           case $EXIT_CODE in
           21)
-            echo "bumped=false" >> $GITHUB_OUTPUT
+            echo "bumped=false" >> "$GITHUB_OUTPUT"
             exit 0;;
           0)
-            echo "bumped=true" >> $GITHUB_OUTPUT
+            echo "bumped=true" >> "$GITHUB_OUTPUT"
             ;;
           *)
             exit $EXIT_CODE;;
           esac
           
           version=$(${{ inputs.build-tool }} run cz version --project)
-          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "version=$version" >> "$GITHUB_OUTPUT"
           major_version=$(echo "$version" | cut -d. -f1 -)
-          echo "major_version=$major_version" >> $GITHUB_OUTPUT
+          echo "major_version=$major_version" >> "$GITHUB_OUTPUT"
       - name: Create and push major tag
         if: steps.bump.outputs.bumped == 'true' && inputs.publish-major-tag
         env:
