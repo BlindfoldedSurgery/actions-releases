@@ -31,5 +31,5 @@ jobs:
         if: inputs.build-tool == 'uv'
       - id: version
         run: |
-          version=$(${{ inputs.build tool }} run cz version --project)
+          version=$(${{ inputs.build-tool }} run cz version --project)
           echo "version=$version" >> "$GITHUB_OUTPUT"
