@@ -67,7 +67,7 @@ jobs:
             exit $EXIT_CODE;;
           esac
           
-          version=$(${{ inputs.tool-version }} run cz version --project)
+          version=$(${{ inputs.build-tool }} run cz version --project)
           echo "version=$version" >> $GITHUB_OUTPUT
           major_version=$(echo "$version" | cut -d. -f1 -)
           echo "major_version=$major_version" >> $GITHUB_OUTPUT
