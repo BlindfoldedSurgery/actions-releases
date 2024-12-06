@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ inputs.python-version }}
-      - run: pipx install poetry==1.8.4
+      - run: pipx install poetry==1.8.5
         if: inputs.build-tool == 'poetry'
       - name: Install uv
         if: inputs.build-tool == 'uv'
