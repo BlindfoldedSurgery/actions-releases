@@ -8,7 +8,8 @@
   "packageRules": [
     {
       "matchDepNames": [
-        "poetry"
+        "poetry",
+        "uv"
       ],
       "matchUpdateTypes": [
         "minor",
@@ -18,7 +19,8 @@
     },
     {
       "matchDepNames": [
-        "poetry"
+        "poetry",
+        "uv"
       ],
       "matchUpdateTypes": [
         "patch"
