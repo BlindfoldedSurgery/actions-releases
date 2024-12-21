@@ -1,3 +1,9 @@
+## v3.1.2 (2024-12-21)
+
+### Fix
+
+- Remove leading dash from cache suffix
+
 ## v3.1.1 (2024-12-21)
 
 ### Fix
