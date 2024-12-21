@@ -1,3 +1,13 @@
+## v3.1.0 (2024-12-21)
+
+### Feat
+
+- Upgrade uv version to 0.5.11
+
+### Fix
+
+- Use explicit cache key suffix for workflows
+
 ## v3.0.0 (2024-12-20)
 
 ### Feat
