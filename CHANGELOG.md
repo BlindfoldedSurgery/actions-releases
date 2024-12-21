@@ -1,3 +1,9 @@
+## v3.1.1 (2024-12-21)
+
+### Fix
+
+- Check out code before installing uv
+
 ## v3.1.0 (2024-12-21)
 
 ### Feat
