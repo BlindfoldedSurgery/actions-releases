@@ -13,6 +13,9 @@ jobs:
   check:
     runs-on: ubuntu-24.04
     if: github.event_name == 'pull_request'
+    env:
+      # renovate: datasource=pypi depName=uv versioning=semver-coerced
+      UV_VERSION: 0.5.11
     steps:
       - uses: actions/setup-python@v5
         with:
@@ -24,7 +27,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           cache-suffix: -actions-releases
-          version: 0.5.6
+          version: ${{ env.UV_VERSION }}
       - uses: actions/checkout@v4
         with:
           fetch-depth: '0'
