@@ -1,3 +1,9 @@
+## v3.1.3 (2024-12-26)
+
+### Fix
+
+- **deps**: update dependency uv to v0.5.12
+
 ## v3.1.2 (2024-12-21)
 
 ### Fix
