@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-24.04
     env:
       # renovate: datasource=pypi depName=uv versioning=semver-coerced
-      UV_VERSION: 0.5.12
+      UV_VERSION: 0.5.13
     outputs:
       version: ${{ steps.version.outputs.version }}
     steps:
