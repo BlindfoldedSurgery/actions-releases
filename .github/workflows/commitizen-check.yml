@@ -15,7 +15,7 @@ jobs:
     if: github.event_name == 'pull_request'
     env:
       # renovate: datasource=pypi depName=uv versioning=semver-coerced
-      UV_VERSION: 0.5.13
+      UV_VERSION: 0.5.14
     steps:
       - uses: actions/setup-python@v5
         with:
