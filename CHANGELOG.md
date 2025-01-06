@@ -1,3 +1,9 @@
+## v4.0.0 (2025-01-06)
+
+### Feat
+
+- **deps**: update dependency poetry to v2
+
 ## v3.2.0 (2025-01-06)
 
 ### Feat
