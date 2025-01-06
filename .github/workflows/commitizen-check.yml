@@ -5,6 +5,9 @@ on:
         type: string
         required: false
         default: poetry
+      build-tool-version:
+        type: string
+        required: false
       python-version:
         type: string
         default: '3.11'
@@ -14,13 +17,15 @@ jobs:
     runs-on: ubuntu-24.04
     if: github.event_name == 'pull_request'
     env:
+      # renovate: datasource=pypi depName=poetry versioning=semver-coerced
+      POETRY_VERSION: 1.8.5
       # renovate: datasource=pypi depName=uv versioning=semver-coerced
       UV_VERSION: 0.5.14
     steps:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ inputs.python-version }}
-      - run: pipx install poetry==1.8.5
+      - run: pipx install poetry==${{ inputs.build-tool-version || env.POETRY_VERSION }}
         if: inputs.build-tool == 'poetry'
       - uses: actions/checkout@v4
         with:
@@ -30,7 +35,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           cache-suffix: actions-releases
-          version: ${{ env.UV_VERSION }}
+          version: ${{ inputs.build-tool-version || env.UV_VERSION }}
       - run: poetry install --all-extras --no-interaction --no-ansi
         if: inputs.build-tool == 'poetry'
       - run: uv sync
