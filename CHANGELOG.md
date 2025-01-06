@@ -1,3 +1,9 @@
+## v3.2.0 (2025-01-06)
+
+### Feat
+
+- Allow build tool version selection
+
 ## v3.1.5 (2025-01-02)
 
 ### Fix
