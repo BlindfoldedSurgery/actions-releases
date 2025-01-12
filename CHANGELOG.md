@@ -1,3 +1,10 @@
+## v4.0.2 (2025-01-12)
+
+### Fix
+
+- **bump**: update uv lockfile with release
+- **bump**: set upstream for bump-version branch
+
 ## v4.0.1 (2025-01-12)
 
 ### Fix
