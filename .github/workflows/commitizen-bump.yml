@@ -63,7 +63,7 @@ jobs:
       - name: Align uv lockfile
         if: inputs.build-tool == 'uv'
         run: |
-          cz bump --files-only
+          uv run cz bump --files-only
           uv lock
           git restore CHANGELOG.md pyproject.toml
       - name: Bump version
