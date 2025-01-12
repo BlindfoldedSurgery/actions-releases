@@ -68,6 +68,8 @@ jobs:
           git restore CHANGELOG.md pyproject.toml
       - name: Bump version
         id: bump
+        env:
+          UV_NO_SYNC: "true"
         run: |
           set +e
           ${{ inputs.build-tool }} run cz bump
