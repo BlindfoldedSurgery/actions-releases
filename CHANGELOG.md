@@ -1,3 +1,13 @@
+## v4.0.1 (2025-01-12)
+
+### Fix
+
+- **deps**: update dependency poetry to v2.0.1
+- **deps**: update dependency uv to v0.5.18
+- **deps**: update dependency uv to v0.5.17
+- **deps**: update dependency uv to v0.5.16
+- **deps**: update dependency uv to v0.5.15
+
 ## v4.0.0 (2025-01-06)
 
 ### Feat
