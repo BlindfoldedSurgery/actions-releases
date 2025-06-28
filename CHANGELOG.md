@@ -1,3 +1,9 @@
+## v4.3.16 (2025-06-28)
+
+### Fix
+
+- Revert update dependency uv to v0.7.16
+
 ## v4.3.15 (2025-06-27)
 
 ### Fix
