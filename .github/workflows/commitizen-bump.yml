@@ -43,7 +43,7 @@ jobs:
           python-version: ${{ inputs.python-version }}
       - run: pipx install poetry==${{ inputs.build-tool-version || env.POETRY_VERSION }}
         if: inputs.build-tool == 'poetry'
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: '0'
           token: ${{ secrets.GH_TOKEN }}
