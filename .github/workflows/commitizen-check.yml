@@ -22,7 +22,7 @@ jobs:
       # renovate: datasource=pypi depName=uv versioning=semver-coerced
       UV_VERSION: 0.8.15
     steps:
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ inputs.python-version }}
       - run: pipx install poetry==${{ inputs.build-tool-version || env.POETRY_VERSION }}

@@ -38,7 +38,7 @@ jobs:
       bumped: ${{ steps.bump.outputs.bumped }}
       version: ${{ steps.bump.outputs.version }}
     steps:
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ inputs.python-version }}
       - run: pipx install poetry==${{ inputs.build-tool-version || env.POETRY_VERSION }}
