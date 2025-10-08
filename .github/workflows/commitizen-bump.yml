@@ -31,7 +31,7 @@ jobs:
     if: success() && github.ref_name == github.event.repository.default_branch
     env:
       # renovate: datasource=pypi depName=poetry versioning=semver-coerced
-      POETRY_VERSION: 2.1.4
+      POETRY_VERSION: 2.2.1
       # renovate: datasource=pypi depName=uv versioning=semver-coerced
       UV_VERSION: 0.8.17
     outputs:
