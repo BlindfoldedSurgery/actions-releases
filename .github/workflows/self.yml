@@ -11,13 +11,13 @@ jobs:
     uses: ./.github/workflows/commitizen-check.yml
     with:
       build-tool: uv
-      python-version: '3.13'
+      python-version: '3.14'
 
   commitizen-bump:
     uses: ./.github/workflows/commitizen-bump.yml
     with:
       build-tool: uv
       publish-major-tag: true
-      python-version: '3.13'
+      python-version: '3.14'
     secrets:
       GH_TOKEN: ${{ secrets.GH_PR_TOKEN }}
