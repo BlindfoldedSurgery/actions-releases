@@ -5,7 +5,7 @@ on:
 
 jobs:
   required-meta:
-    uses: BlindfoldedSurgery/actions-meta/.github/workflows/required.yml@v1
+    uses: BlindfoldedSurgery/actions-meta/.github/workflows/required.yml@v2
 
   commitizen-check:
     uses: ./.github/workflows/commitizen-check.yml
