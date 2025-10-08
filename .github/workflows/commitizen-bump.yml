@@ -49,7 +49,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
       - name: Install uv
         if: inputs.build-tool == 'uv'
-        uses: astral-sh/setup-uv@v6
+        uses: astral-sh/setup-uv@v7
         with:
           cache-suffix: actions-releases
           version: ${{ inputs.build-tool-version || env.UV_VERSION }}
