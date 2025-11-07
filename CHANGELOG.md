@@ -1,3 +1,9 @@
+## v4.6.8 (2025-11-07)
+
+### Fix
+
+- **deps**: update dependency uv to v0.9.8
+
 ## v4.6.7 (2025-10-31)
 
 ### Fix
