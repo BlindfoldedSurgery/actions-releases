@@ -1,3 +1,9 @@
+## v5.0.0 (2025-11-15)
+
+### Fix
+
+- add required permissions for all jobs
+
 ## v4.6.9 (2025-11-12)
 
 ### Fix
