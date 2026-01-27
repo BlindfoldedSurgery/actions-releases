@@ -1,7 +1,7 @@
 [project]
 name = "actions-releases"
 description = "GitHub Actions Workflows for Releases"
-version = "5.1.1"
+version = "5.1.2"
 authors = [{ name = "BlindfoldedSurgery", email = "team@blindfolded.surgery" }]
 classifiers = [
     "Private :: Do Not Upload",
