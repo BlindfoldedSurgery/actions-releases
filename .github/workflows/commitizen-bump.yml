@@ -37,7 +37,7 @@ jobs:
       # renovate: datasource=pypi depName=poetry versioning=semver-coerced
       POETRY_VERSION: 2.3.2
       # renovate: datasource=pypi depName=uv versioning=semver-coerced
-      UV_VERSION: 0.9.30
+      UV_VERSION: 0.10.0
     outputs:
       bumped: ${{ steps.bump.outputs.bumped }}
       version: ${{ steps.bump.outputs.version }}
