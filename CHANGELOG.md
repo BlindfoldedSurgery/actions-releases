@@ -1,3 +1,9 @@
+## v5.2.0 (2026-02-07)
+
+### Feat
+
+- **deps**: update dependency uv to v0.10.0
+
 ## v5.1.6 (2026-02-05)
 
 ### Fix
