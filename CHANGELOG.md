@@ -1,3 +1,9 @@
+## v5.3.3 (2026-03-29)
+
+### Fix
+
+- **deps**: update dependency poetry to v2.3.3
+
 ## v5.3.2 (2026-03-26)
 
 ### Fix
