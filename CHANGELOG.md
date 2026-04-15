@@ -1,3 +1,9 @@
+## v5.3.6 (2026-04-15)
+
+### Fix
+
+- **deps**: update dependency uv to v0.11.6 [security]
+
 ## v5.3.5 (2026-04-08)
 
 ### Fix
