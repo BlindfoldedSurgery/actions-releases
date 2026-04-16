@@ -36,7 +36,7 @@ jobs:
       - uses: actions/checkout@v6.0.2
       - name: Install uv
         if: inputs.build-tool == 'uv'
-        uses: astral-sh/setup-uv@v7.6.0
+        uses: astral-sh/setup-uv@v8.0.0
         with:
           cache-suffix: actions-releases
           version: ${{ inputs.build-tool-version || env.UV_VERSION }}
