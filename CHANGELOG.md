@@ -1,3 +1,9 @@
+## v5.3.9 (2026-04-16)
+
+### Fix
+
+- pin all third-party actions
+
 ## v5.3.8 (2026-04-16)
 
 ### Fix
