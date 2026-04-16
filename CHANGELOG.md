@@ -1,3 +1,10 @@
+## v5.3.7 (2026-04-16)
+
+### Fix
+
+- **deps**: update dependency uv to v0.11.7
+- **deps**: update dependency poetry to v2.3.4
+
 ## v5.3.6 (2026-04-15)
 
 ### Fix
