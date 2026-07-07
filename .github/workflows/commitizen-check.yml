@@ -36,7 +36,7 @@ jobs:
           fetch-depth: '0'
       - name: Install uv
         if: inputs.build-tool == 'uv'
-        uses: astral-sh/setup-uv@v8.3.0
+        uses: astral-sh/setup-uv@v8.3.1
         with:
           cache-suffix: actions-releases
           version: ${{ inputs.build-tool-version || env.UV_VERSION }}
