@@ -1,3 +1,10 @@
+## v5.4.16 (2026-07-27)
+
+### Fix
+
+- **deps**: update dependency uv to v0.11.32
+- **deps**: update dependency pre-commit to v4.6.1
+
 ## v5.4.15 (2026-07-16)
 
 ### Fix
