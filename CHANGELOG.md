@@ -1,3 +1,10 @@
+## v6.0.0 (2026-10-01)
+
+### Feat
+
+- update default Python version to 3.14
+- drop support for Poetry
+
 ## v5.6.0 (2026-10-01)
 
 ### Feat
