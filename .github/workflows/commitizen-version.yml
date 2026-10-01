@@ -9,7 +9,7 @@ on:
         required: false
       python-version:
         type: string
-        default: '3.11'
+        default: '3.14'
     outputs:
       version:
         value: ${{ jobs.version.outputs.version }}
