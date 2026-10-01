@@ -1,3 +1,9 @@
+## v5.6.0 (2026-10-01)
+
+### Feat
+
+- **deps**: update dependency poetry to v2.5.1
+
 ## v5.5.11 (2026-10-01)
 
 ### Fix
