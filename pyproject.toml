@@ -2,7 +2,7 @@
 name = "actions-releases"
 description = "GitHub Actions Workflows for Releases"
 version = "5.6.0"
-authors = [{ name = "BlindfoldedSurgery", email = "team@blindfolded.surgery" }]
+authors = [{ name = "BlindfoldedSurgery", email = "bs@bjoernpetersen.net" }]
 classifiers = [
     "Private :: Do Not Upload",
     "License :: OSI Approved :: MIT License",
