@@ -35,7 +35,7 @@ jobs:
     if: success() && github.ref_name == github.event.repository.default_branch
     env:
       # renovate: datasource=pypi depName=uv versioning=semver-coerced
-      UV_VERSION: 0.12.21
+      UV_VERSION: 0.12.22
     outputs:
       bumped: ${{ steps.bump.outputs.bumped }}
       version: ${{ steps.bump.outputs.version }}
