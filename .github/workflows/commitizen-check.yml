@@ -22,7 +22,7 @@ jobs:
     if: github.event_name == 'pull_request'
     env:
       # renovate: datasource=pypi depName=uv versioning=semver-coerced
-      UV_VERSION: 0.12.21
+      UV_VERSION: 0.12.22
     steps:
       - if: inputs.build-tool != 'uv'
         run: |
