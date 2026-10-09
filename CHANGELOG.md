@@ -1,3 +1,9 @@
+## v6.0.3 (2026-10-09)
+
+### Fix
+
+- **deps**: update dependency uv to v0.12.24
+
 ## v6.0.2 (2026-10-05)
 
 ### Fix
