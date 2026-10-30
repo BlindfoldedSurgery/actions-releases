@@ -20,7 +20,7 @@ jobs:
       contents: read
       pull-requests: write
     with:
-      python-version: '3.14'
+      python-version: '3.15'
 
   commitizen-bump:
     permissions:
@@ -29,6 +29,6 @@ jobs:
     uses: ./.github/workflows/commitizen-bump.yml
     with:
       publish-major-tag: true
-      python-version: '3.14'
+      python-version: '3.15'
     secrets:
       GH_TOKEN: ${{ secrets.GH_PR_TOKEN }}
